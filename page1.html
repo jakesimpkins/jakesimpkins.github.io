@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="myWeb.css" rel="stylesheet">
+        <title>Final HTML Page 1</title>
+    </head>
+    <body>
+        <div id="header" class="header">
+            <h1>What is Mizzou Information Technology</h1>
+        </div>
+        <div id="description" class="description">
+            <img class="img" src="https://showme.missouri.edu/wp-content/uploads/2020/07/Campus-Beauty-17.jpg" alt="Mizzou columns">
+            <p>The Information Technologies degree at Mizzou has two main focues. First being software engineering and computer management. 
+                The other being digital media design, development, and production. We will dive deeper into these two focuses in 
+                <a href="https://github.com/jakesimpkins/jakesimpkins.github.io/blob/main/page2.html" target="_blank">page2.html</a> and 
+                <a href="https://github.com/jakesimpkins/jakesimpkins.github.io/blob/main/page3.html" target="_blank">page3.html</a>. 
+                For now we will just be focusing on the degree as a whole. A great source for information about the degree can be found at the
+                <a href="https://catalog.missouri.edu/collegeofengineering/informationtechnology/">Mizzou IT page</a>
+            </p>
+            <p><b>Why I chose Mizzou IT</b></p>
+            <p>I originally came to Mizzou to study computer science. I was always impressed by coding and the ability to understand how a machine worked.
+             As excited as I was to be studying in the field, I was told of the IT program on my first day of classes. It was explained to me for the
+             first time how computer science and IT are similar but have important <i>differences</i> that need to be understood. Where computer science
+             studies how code was created and the math behind coding, IT focuses on <span class="green">implementing</span> the code for design. Here are some of the ways we
+             study the use of code in IT.</p>
+            <ul>
+                <li>Web Development</li>
+                <li>Software Engineering</li>
+                <li>Media Design</li>
+                <li>Data Analysis</li>
+                <li>and More!</li>
+            </ul>
+            <p>After just a few weeks of class I have already began to develop projects with coding languages such as <i>python, HTML,</i> and <i>JavaScript</i>.
+             I have also began learning how to use software like photoshop to create mock websites and logos. Examples of both are included below.</p>
+            <p><b>JavaScript from a FizzBuzz challenge</b></p>
+            <pre>
+                <code>
+                    function fizzbuzz() {
+                        var display = document.getElementById('display');
+                        var displayHTML = "";
+                        for (i = 0; i < 100; i++) {
+                        if (i % 3 != 0 && i % 5 != 0) {
+                          displayHTML += i;
+                        } else if (i % 3 == 0 && i % 5 != 0) {
+                          displayHTML += "Fizz";
+                        } else if (i % 3 != 0 && i % 5 == 0) {
+                          displayHTML += "Buzz";
+                        } else if (i % 3 == 0 && i % 5 == 0) {
+                          displayHTML += "FizzBuzz";
+                        }
+                </code>
+            </pre>
+            <p><b>Mock web page made through photoshop</b></p>
+            <img class="img" src="https://user-images.githubusercontent.com/112040527/197279452-3625635e-ddca-4057-8c4a-98784b49d9cd.png" alt="Mock web page">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,21 @@
+.header{
+    text-align: center;
+    background-color: lightblue;
+}
+
+.green{
+    color: green;
+}
+
+.yellow{
+    color: yellow;
+}
+
+.img{
+    width: 100%;
+    height: auto;
+}
+
+.description{
+    background-color: lightgray;
+}

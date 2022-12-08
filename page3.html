@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="myWeb.css">
+        <title>Final HTML Page 3</title>
+    </head>
+    <body>
+        <div id="header" class="header">
+            <h1>Learning how to Design</h1>
+        </div>
+        <div id="description" class="description">
+            <img src="https://play-lh.googleusercontent.com/WIVfY42FSk4naFCn42h694luehyzsifuiy2l0ok_-lFeb50qda_7j3YQdp0x2-S2_ykH" alt="Adobe Cloud Logo">
+            <p>The other main focus of the IT degree at <span class="yellow">Mizzou</span> is studying and learning the design process behind digital media. 
+                How to develop an idea, design it, and produce it into its highest quality. These designs are typically made to support 
+                the code behind them (discussed in <a href="https://github.com/jakesimpkins/jakesimpkins.github.io/blob/main/page2.html" target="_blank">page2.html</a> 
+                and build a presentable <b>front end</b>. Some of the possible uses of this include:
+            </p>
+            <ul>
+                <li>Web Development</li>
+                <li>Game Graphics</li>
+                <li>Game Sound</li>
+                <li>And More!</li>
+            </ul>
+            <p>Most of the design processes are done through 
+                <a href="https://www.adobe.com/creativecloud.html?sdid=KKQWX&mv=search&ef_id=Cj0KCQjwhsmaBhCvARIsAIbEbH7YoZJDwxAM9l9ODIOPxfPMC3d7D4xm6E9Nhh0kxr9Cth5X1c6lYEAaAh14EALw_wcB:G:s&s_kwcid=AL!3085!3!541671698376!e!!g!!adobe!50818900!3060803800&mv=search&gclid=Cj0KCQjwhsmaBhCvARIsAIbEbH7YoZJDwxAM9l9ODIOPxfPMC3d7D4xm6E9Nhh0kxr9Cth5X1c6lYEAaAh14EALw_wcB" target="_blank">Adobe</a>
+                 and the design tools <i>Adobe</i> offers such as Photoshop, Illustrator and Audition. 
+                Below I included an example of an SVG we created in class to show some of the work we do.
+            </p>
+            <img class="img" src="https://user-images.githubusercontent.com/112040527/197290506-1aeb90c4-778a-4ff7-9b8e-05be0edd1014.png" alt="Design of a retro controller">
+            <p>
+                Although we focus on design, code can still be used to create these elements.
+                Coding languages like CSS specialize in creating graphics on the front end of websites.
+                Below I included a block of code that creates a graphic with Python.
+            </p>
+            <pre>
+                <code>
+                    from turtle import Turtle
+
+                    def curvedCircles(turtle, angle, length, radius):
+                        turtle.color("orange")
+                        turtle.penup()
+                        turtle.right(angle)
+                        turtle.forward(length)
+                        turtle.pendown()
+                        turtle.circle(radius)
+                        length = length - 5
+                        angle = angle + 5
+                        radius = radius - 5
+                        if (radius > 5):
+                            curvedCircles(turtle, angle, length, radius)
+
+                    def circleSun(turn):
+                        animationSpeed = 0
+                        tim = Turtle()
+                        tim.speed(animationSpeed)
+                        for i in range(20):
+                            tim.penup()
+                            tim.setx(0)
+                            tim.sety(0)
+                            tim.right(turn)
+                            tim.pendown()
+                            curvedCircles(tim, 0, 50, 50)
+
+                    circleSun(10)
+                </code>
+            </pre>
+        </div>
+    </body>
+</html>
